@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            Username : <input id="username" type="text" name="username"><br>
+            Password : <input id="password" type="password" name="password"><br>
+            <button id="submitBtn"><a  href="{{ url_for('login') }}">run</a></button>          
+             
+        </form>
+        <h1>refael</h1>
+    </body>
+    <script>
+        document.querySelector("#submitBtn").addEventListener("click", () => {
+            const userValue = document.querySelector('#username').value;
+            const passwordValue = document.querySelector('#password').value;
+            console.log(userValue);
+            console.log(passwordValue);
+        })
+    </script>
+</html>
