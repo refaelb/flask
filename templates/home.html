@@ -4,18 +4,16 @@
     </head>
     <body>
         <form action="/" method="POST">
-            Username : <input id="username" type="text" name="username"><br>
-            Password : <input id="password" type="password" name="password"><br>
+            namespace : <input id="username" type="text" name="namespace"><br>
+            chartname : <input id="username" type="text" name="chartname"><br>
+            host : <input id="username" type="text" name="host"><br>
+            repo : <input id="username" type="text" name="repo"><br>
+            tag : <input id="username" type="text" name="tag"><br>
+            reg : <input id="username" type="text" name="reg"><br>
+            branch : <input id="username" type="text" name="usernabranchme"><br>
+            homedir : <input id="password" type="text" name="homedir"><br>
             <a href=# id=test><button class='btn btn-default'>login</button></a>
-            <button id="submitBtn"><a  href="{{ url_for('login') }}">login</a></button>
-            <script>
-                document.querySelector("#submitBtn").addEventListener("click", () => {
-                    const userValue = document.querySelector('#username').value;
-                    const passwordValue = document.querySelector('#password').value;
-                    console.log(userValue);
-                    console.log(passwordValue);
-                })
-            </script>
+            <p><a href="{{ url_for('login') }}">click me</a></p>
         </form>
         <h1>refael</h1>
     </body>

@@ -1,3 +1,6 @@
 import os
-def test():
-    os.system('mkdir fd')
+def test(Namespace):
+    os.system('mkdir '+ Namespace)
+    while True:
+        
+        print(Namespace)
