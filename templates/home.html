@@ -3,7 +3,7 @@
         <title></title>
     </head>
     <body>
-        <form action="/" method="POST">
+        <form action="/login" method="POST">
             namespace : <input id="username" type="text" name="namespace"><br>
             chartname : <input id="username" type="text" name="chartname"><br>
             host : <input id="username" type="text" name="host"><br>
@@ -12,9 +12,7 @@
             reg : <input id="username" type="text" name="reg"><br>
             branch : <input id="username" type="text" name="usernabranchme"><br>
             homedir : <input id="password" type="text" name="homedir"><br>
-            <a href=# id=test><button class='btn btn-default'>login</button></a>
-            <p><a href="{{ url_for('login') }}">click me</a></p>
+            <button onclick="location.href = '/login';" >run</button>
         </form>
-        <h1>refael</h1>
     </body>
 </html>
